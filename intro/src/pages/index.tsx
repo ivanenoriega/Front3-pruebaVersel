@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div className='landing'>
       <Head>
-        <title>Duo Serendipia</title>
+        <title>Duo Serendipia </title>
         <meta name='viewport' content='initial-scale-1.0, width-device-width'/>
         <meta name='description' content={conetnt.description}/>
         <link rel='shortcut icon' href='/logo.png'/>
