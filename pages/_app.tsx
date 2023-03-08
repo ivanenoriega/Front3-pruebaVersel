@@ -2,19 +2,19 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import React from 'react'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 
-export const Locale = React.createContext<string|undefined>("es")
+export const Locale = React.createContext<string | undefined>("es")
 
 export default function App({ Component, pageProps }: AppProps) {
-  const router =useRouter()
-  const{locale} = router
+  const router = useRouter()
+  const { locale } = router
 
-  return(
+  return (
     <Locale.Provider value={locale}>
-    <Layout>
+      <Layout>
         <Component {...pageProps} />
-    </Layout>
+      </Layout>
     </Locale.Provider>
-  ) 
+  )
 }
