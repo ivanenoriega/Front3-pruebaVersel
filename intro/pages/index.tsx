@@ -2,10 +2,10 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useContext } from 'react'
-import foto from '../../public/foto.jpg'
+import foto from '../public/foto.jpg'
 import { Locale } from './_app'
-import contentAR from '../components/locales/ar'
-import contentBR from '../components/locales/br'
+import contentAR from './components/locales/ar'
+import contentBR from './components/locales/br'
 
 const Home: NextPage = () => {
   const locale = useContext(Locale)
